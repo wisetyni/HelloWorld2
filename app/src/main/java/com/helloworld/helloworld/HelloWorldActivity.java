@@ -34,7 +34,7 @@ public class HelloWorldActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                fullNameText.setText(firstNameText.getText().toString() + " " + lastNameText.getText().toString() );
+                fullNameText.setText(firstNameText.getText().toString() + " " + lastNameText.getText().toString());
             }
         });
     }

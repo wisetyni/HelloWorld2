@@ -7,6 +7,7 @@
     tools:context="com.helloworld.helloworld.HelloWorldActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World,"
@@ -20,53 +21,83 @@
     <EditText
         android:id="@+id/firstNameText"
         android:layout_width="227dp"
-        android:layout_height="36dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Kim"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="134dp" />
+        app:layout_constraintBottom_toTopOf="@+id/lastNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
 
     <TextView
         android:id="@+id/firstNameLabel"
         android:layout_width="82dp"
         android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
         android:text="First Name:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintEnd_toStartOf="@+id/firstNameText"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lastNameText"
+        android:id="@+id/lastNameLabel"
         android:layout_width="78dp"
         android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
         android:text="Last Name:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintEnd_toStartOf="@+id/lastNameText"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/displayBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Display"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="327dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
 
     <EditText
         android:id="@+id/lastNameText"
         android:layout_width="225dp"
         android:layout_height="38dp"
+        android:layout_marginBottom="256dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Blank"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/fullNameView"
         android:layout_width="238dp"
         android:layout_height="43dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="8dp"
         android:text="Full Name"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
 
 </android.support.constraint.ConstraintLayout>
