@@ -18,7 +18,9 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/fullNameView"
         app:layout_constraintEnd_toStartOf="@+id/fullNameView"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/guideline" />
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="4dp" />
 
     <EditText
         android:id="@+id/firstNameText"
@@ -48,7 +50,9 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/firstNameText"
         app:layout_constraintEnd_toStartOf="@+id/firstNameText"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toEndOf="@+id/guideline" />
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/lastNameLabel"
@@ -65,7 +69,8 @@
         app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline" />
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        android:layout_marginRight="22dp" />
 
     <Button
         android:id="@+id/displayBtn"
@@ -79,7 +84,9 @@
         app:layout_constraintBottom_toTopOf="@+id/fullNameView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/lastNameText" />
+        app:layout_constraintTop_toBottomOf="@+id/lastNameText"
+        android:layout_marginRight="135dp"
+        android:layout_marginLeft="72dp" />
 
     <EditText
         android:id="@+id/lastNameText"
@@ -95,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lastNameLabel"
-        app:layout_constraintTop_toBottomOf="@+id/firstNameText" />
+        app:layout_constraintTop_toBottomOf="@+id/firstNameText"
+        android:layout_marginLeft="22dp" />
 
     <TextView
         android:id="@+id/fullNameView"
